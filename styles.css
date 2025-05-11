@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e1117;
+    color: #dcdcdc;
+    line-height: 1.7;
+    padding: 40px 20px;
+}
+
+.container {
+    background-color: #1c1f26;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-left: 5px solid #888;
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #cccccc;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #888;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+header p {
+    color: #a3b2c2;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #a3b2c2;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 2px;
+    background-color: #888;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    list-style-type: circle;
+}
+
+.download-btn {
+    background-color: #888;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.download-btn:hover {
+    background-color: #666;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.scroll-effect {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.show-on-scroll {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+.image-caption {
+    text-align: center;
+    color: #a3b2c2;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+}
+
